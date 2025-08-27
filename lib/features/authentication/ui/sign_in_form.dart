@@ -9,6 +9,7 @@ class SignInForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isSelected = false;
     return SingleChildScrollView(
       padding: const EdgeInsets.all(24),
       child: Column(
@@ -41,7 +42,7 @@ class SignInForm extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Checkbox(value: false, onChanged: (_) {}),
+                  Checkbox(value: isSelected, onChanged: (_) {}),
                   const Text("Remember Me"),
                 ],
               ),

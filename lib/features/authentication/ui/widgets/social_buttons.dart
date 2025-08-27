@@ -1,5 +1,6 @@
 import 'package:academy/core/helpers/spacing.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SocialButtons extends StatelessWidget {
   const SocialButtons({super.key});
@@ -14,14 +15,29 @@ class SocialButtons extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             IconButton(
-              icon: Image.asset("assets/google.png"),
+              icon: Image.asset(
+                "assets/google.png",
+                width: 30.sp,
+                height: 30.sp,
+              ),
               onPressed: () {},
             ),
             IconButton(
-              icon: Image.asset("assets/facebook.png"),
+              icon: Image.asset(
+                "assets/facebook.png",
+                width: 30.sp,
+                height: 30.sp,
+              ),
               onPressed: () {},
             ),
-            IconButton(icon: Image.asset("assets/apple.png"), onPressed: () {}),
+            IconButton(
+              icon: Image.asset(
+                "assets/apple.png",
+                width: 30.sp,
+                height: 30.sp,
+              ),
+              onPressed: () {},
+            ),
           ],
         ),
       ],

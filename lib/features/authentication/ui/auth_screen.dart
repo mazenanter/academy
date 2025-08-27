@@ -1,5 +1,6 @@
 import 'package:academy/core/widgets/back_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'sign_in_form.dart';
 import 'sign_up_form.dart';
 
@@ -21,14 +22,19 @@ class _AuthScreenState extends State<AuthScreen>
   }
 
   @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return BackScreen(
       child: SafeArea(
         child: Column(
           children: [
-            const SizedBox(height: 20),
             Container(
-              margin: const EdgeInsets.symmetric(horizontal: 50),
+              padding: EdgeInsets.all(4.w),
               decoration: BoxDecoration(
                 color: Colors.grey.shade200,
                 borderRadius: BorderRadius.circular(30),
@@ -41,6 +47,9 @@ class _AuthScreenState extends State<AuthScreen>
                 ),
                 labelColor: Colors.black,
                 unselectedLabelColor: Colors.grey,
+                indicatorColor: Colors.transparent, // ✅ remove underline
+                dividerColor: Colors.transparent, // ✅ Flutter 3.7+
+                overlayColor: MaterialStateProperty.all(Colors.transparent),
                 tabs: const [Tab(text: "Sign Up"), Tab(text: "Sign In")],
               ),
             ),
