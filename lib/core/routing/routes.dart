@@ -1,3 +1,3 @@
 class Routes {
-  static const String test = '/test';
+  static const String onboardingScreen = '/onboardingScreen';
 }
