@@ -19,7 +19,7 @@ class AcademyApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
         ),
         onGenerateRoute: appRouter.onGenerateRoute,
-        initialRoute: Routes.subscriptionScreen,
+        initialRoute: Routes.choosePaymentMethodScreen,
       ),
     );
   }

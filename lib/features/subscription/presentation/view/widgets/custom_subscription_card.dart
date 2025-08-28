@@ -1,7 +1,7 @@
 import 'package:academy/core/styles/colors_manger.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/features/subscription/presentation/view/widgets/custom_radio.dart';
-import 'package:academy/features/subscription/presentation/view/widgets/custom_subscription_card_background.dart';
+import 'package:academy/features/subscription/presentation/view/widgets/custom_background_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
@@ -24,7 +24,7 @@ class CustomSubscriptionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap ,
-      child: CustomSubscriptionCardBackground(
+      child: CustomBackgroundCard(
         isSelected: isSelected,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

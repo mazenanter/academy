@@ -2,8 +2,8 @@ import 'package:academy/core/styles/colors_manger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CustomSubscriptionCardBackground extends StatelessWidget {
-  const CustomSubscriptionCardBackground({super.key, required this.child, required this.isSelected });
+class CustomBackgroundCard extends StatelessWidget {
+  const CustomBackgroundCard({super.key, required this.child, required this.isSelected });
   final Widget child;
   final bool isSelected;
   @override

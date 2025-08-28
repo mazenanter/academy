@@ -1,5 +1,6 @@
 import 'package:academy/core/routing/routes.dart';
 import 'package:academy/features/onboarding/onboarding_screen.dart';
+import 'package:academy/features/subscription/presentation/view/choose_payment_method_view.dart';
 import 'package:academy/features/subscription/presentation/view/subscription_view.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +11,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
       case Routes.subscriptionScreen:
         return MaterialPageRoute(builder: (_) => const SubscriptionView());
+      case Routes.choosePaymentMethodScreen:
+        return MaterialPageRoute(
+          builder: (_) => const ChoosePaymentMethodView(),
+        );
       default:
         return MaterialPageRoute(
           builder:
