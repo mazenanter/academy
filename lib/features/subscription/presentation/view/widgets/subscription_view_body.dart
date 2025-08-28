@@ -1,3 +1,4 @@
+import 'package:academy/core/routing/routes.dart';
 import 'package:academy/core/styles/colors_manger.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/core/widgets/app_text_button.dart';
@@ -68,7 +69,9 @@ class _SubscriptionViewBodyState extends State<SubscriptionViewBody> {
           AppTextButton(
             text: "Next",
             textStyle: TextStylesManager.font22Bold.copyWith(color: Colors.white),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, Routes.choosePaymentMethodScreen);
+            },
             borderRadius: 24,
           ),
           Gap(10.h),
