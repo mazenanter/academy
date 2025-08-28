@@ -2,6 +2,9 @@ import 'package:academy/core/styles/colors_manger.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/core/widgets/app_text_button.dart';
 import 'package:academy/core/widgets/custom_text_form_field.dart';
+import 'package:academy/features/subscription/presentation/view/widgets/credit_card_field.dart';
+import 'package:academy/features/subscription/presentation/view/widgets/cvv_field.dart';
+import 'package:academy/features/subscription/presentation/view/widgets/expiry_date_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
@@ -33,13 +36,13 @@ class _CreditCardDetailsViewBodyState extends State<CreditCardDetailsViewBody> {
               ),
             ),
             Gap(30.h),
-            CustomTextFormField(hintText: "Card Number"),
+            CreditCardField(),
             Gap(20.h),
             Row(
               children: [
-                Expanded(child: CustomTextFormField(hintText: "Expiry")),
+                Expanded(child: ExpiryDateField()),
                 Gap(10.w),
-                Expanded(child: CustomTextFormField(hintText: "CVV/CVC")),
+                Expanded(child: CVVField()),
               ],
             ),
             Gap(100.h),

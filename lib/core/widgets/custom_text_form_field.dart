@@ -1,6 +1,7 @@
 import 'package:academy/core/styles/colors_manger.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 
 
@@ -18,6 +19,7 @@ class CustomTextFormField extends StatelessWidget {
     this.keyboardType,
     this.obscureText = false,
     this.maxLines = 1 ,
+    this.inputFormatters,
   });
   final void Function(String)? onChanged;
   final String? Function(String?)? validator;
@@ -30,10 +32,12 @@ class CustomTextFormField extends StatelessWidget {
   final Widget? suffix;
   final bool obscureText;
   final int? maxLines ;
+  final List<TextInputFormatter>? inputFormatters ;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      inputFormatters: inputFormatters,
       keyboardType: keyboardType,
       cursorColor: Colors.black,
       validator: validator,
