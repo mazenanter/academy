@@ -39,7 +39,7 @@ class OnboardingScreen extends StatelessWidget {
               ),
               verticalSpace(8),
               AppTextButton(
-                borderRaduis: 10,
+                borderRadius: 10,
                 backgroundColor: Colors.white,
 
                 text: 'Login',

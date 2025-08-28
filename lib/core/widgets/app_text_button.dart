@@ -9,7 +9,7 @@ class AppTextButton extends StatelessWidget {
     required this.textStyle,
     this.horizontalPadding,
     this.verticalPadding,
-    this.borderRaduis,
+    this.borderRadius,
     this.buttonHeight,
     this.buttonWidth,
     this.backgroundColor,
@@ -19,7 +19,7 @@ class AppTextButton extends StatelessWidget {
   final TextStyle textStyle;
   final double? horizontalPadding;
   final double? verticalPadding;
-  final double? borderRaduis;
+  final double? borderRadius;
   final double? buttonHeight;
   final double? buttonWidth;
   final Color? backgroundColor;
@@ -36,7 +36,7 @@ class AppTextButton extends StatelessWidget {
         ),
         shape: WidgetStatePropertyAll(
           RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRaduis ?? 5),
+            borderRadius: BorderRadius.circular(borderRadius ?? 5),
             side: BorderSide(width: 1, color: ColorsManger.primaryColor),
           ),
         ),

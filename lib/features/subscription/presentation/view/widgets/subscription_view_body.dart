@@ -1,5 +1,6 @@
 import 'package:academy/core/styles/colors_manger.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
+import 'package:academy/core/widgets/app_text_button.dart';
 import 'package:academy/features/subscription/presentation/view/widgets/custom_subscription_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -62,6 +63,30 @@ class _SubscriptionViewBodyState extends State<SubscriptionViewBody> {
                 });
               }
             },
+          ),
+          Gap(40.h),
+          AppTextButton(
+            text: "Next",
+            textStyle: TextStylesManager.font22Bold.copyWith(color: Colors.white),
+            onPressed: () {},
+            borderRadius: 24,
+          ),
+          Gap(10.h),
+          GestureDetector(
+            onTap: () {
+              // navigate to home view
+            },
+            child: Center(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'Continue without plan',
+                  style: TextStylesManager.font18Regular.copyWith(
+                    color: Color(0xFF0E97CD),
+                  ),
+                ),
+              ),
+            ),
           ),
         ],
       ),
