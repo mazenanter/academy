@@ -18,6 +18,22 @@ class Assets {
   /// assets/onboarding_image.png
   static const String onboardingImage = "assets/onboarding_image.png";
 
+  /// Assets for paymentFailed
+  /// assets/payment_failed.svg
+  static const String paymentFailed = "assets/payment_failed.svg";
+
+  /// Assets for paymentFailed1
+  /// assets/payment_failed1.png
+  static const String paymentFailed1 = "assets/payment_failed1.png";
+
+  /// Assets for paymentSuccess
+  /// assets/payment_success.svg
+  static const String paymentSuccess = "assets/payment_success.svg";
+
+  /// Assets for paymentSuccess1
+  /// assets/payment_success1.png
+  static const String paymentSuccess1 = "assets/payment_success1.png";
+
   /// Assets for paypalCard
   /// assets/paypal_card.svg
   static const String paypalCard = "assets/paypal_card.svg";
