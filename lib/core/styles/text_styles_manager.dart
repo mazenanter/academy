@@ -15,119 +15,112 @@ class TextStylesManager {
     fontWeight: FontWeight.w500,
     color: Color(0xff6F6A80),
   );
-
-  static TextStyle regular12 = TextStyle(
+  static TextStyle font12Regular = TextStyle(
     fontSize: 12.sp,
     fontWeight: FontWeight.normal,
   );
-  static TextStyle regular14 = TextStyle(
+  static TextStyle font14Regular = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.normal,
   );
-  static TextStyle regular16 = TextStyle(
+  static TextStyle font16Regular = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.normal,
   );
-  static TextStyle regular18 = TextStyle(
+  static TextStyle font18Regular = TextStyle(
     fontSize: 18.sp,
     fontWeight: FontWeight.normal,
   );
-  static TextStyle regular20 = TextStyle(
+  static TextStyle font20Regular = TextStyle(
     fontSize: 20.sp,
     fontWeight: FontWeight.normal,
   );
-  static TextStyle regular22 = TextStyle(
+  static TextStyle font22Regular = TextStyle(
     fontSize: 22.sp,
     fontWeight: FontWeight.normal,
   );
-  static TextStyle regular24 = TextStyle(
+  static TextStyle font24Regular = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.normal,
   );
 
-  static TextStyle medium12 = TextStyle(
+  static TextStyle font12Medium = TextStyle(
     fontSize: 12.sp,
     fontWeight: FontWeight.w500,
   );
-  static TextStyle medium14 = TextStyle(
+  static TextStyle font14Medium = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.w500,
   );
-  static TextStyle medium16 = TextStyle(
-    fontSize: 16.sp,
-    fontWeight: FontWeight.w500,
-  );
-  static TextStyle medium18 = TextStyle(
+  
+  static TextStyle font18Medium = TextStyle(
     fontSize: 18.sp,
     fontWeight: FontWeight.w500,
   );
-  static TextStyle medium20 = TextStyle(
+  static TextStyle font20Medium = TextStyle(
     fontSize: 20.sp,
     fontWeight: FontWeight.w500,
   );
-  static TextStyle medium22 = TextStyle(
+  static TextStyle font22Medium = TextStyle(
     fontSize: 22.sp,
     fontWeight: FontWeight.w500,
   );
-  static TextStyle medium24 = TextStyle(
+  static TextStyle font24Medium = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.w500,
   );
 
-  static TextStyle semibold12 = TextStyle(
+  static TextStyle font12Semibold = TextStyle(
     fontSize: 12.sp,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle semibold14 = TextStyle(
+  static TextStyle font14Semibold = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle semibold16 = TextStyle(
+  static TextStyle font16Semibold = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle semibold18 = TextStyle(
+  static TextStyle font18Semibold = TextStyle(
     fontSize: 18.sp,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle semibold20 = TextStyle(
+  static TextStyle font20Semibold = TextStyle(
     fontSize: 20.sp,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle semibold22 = TextStyle(
+  static TextStyle font22Semibold = TextStyle(
     fontSize: 22.sp,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle semibold24 = TextStyle(
+  static TextStyle font24Semibold = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle bold12 = TextStyle(
+  static TextStyle font12Bold = TextStyle(
     fontSize: 12.sp,
     fontWeight: FontWeight.bold,
   );
-  static TextStyle bold14 = TextStyle(
+  static TextStyle font14Bold = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.bold,
   );
-  static TextStyle bold16 = TextStyle(
+  static TextStyle font16Bold = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.bold,
   );
-  static TextStyle bold18 = TextStyle(
+  static TextStyle font18Bold = TextStyle(
     fontSize: 18.sp,
     fontWeight: FontWeight.bold,
   );
-  static TextStyle bold20 = TextStyle(
+  static TextStyle font20Bold = TextStyle(
     fontSize: 20.sp,
     fontWeight: FontWeight.bold,
   );
-  static TextStyle bold22 = TextStyle(
-    fontSize: 22.sp,
-    fontWeight: FontWeight.bold,
-  );
-  static TextStyle bold24 = TextStyle(
+  
+  static TextStyle font24Bold = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.bold,
   );
