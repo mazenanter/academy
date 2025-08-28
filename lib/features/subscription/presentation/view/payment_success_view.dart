@@ -1,4 +1,3 @@
-import 'package:academy/core/routing/routes.dart';
 import 'package:academy/core/styles/colors_manger.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/core/utils/app_images.dart';

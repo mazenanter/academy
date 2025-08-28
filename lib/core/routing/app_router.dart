@@ -1,6 +1,7 @@
 import 'package:academy/core/routing/routes.dart';
 import 'package:academy/features/onboarding/onboarding_screen.dart';
 import 'package:academy/features/subscription/presentation/view/choose_payment_method_view.dart';
+import 'package:academy/features/subscription/presentation/view/credit_card_details_view.dart';
 import 'package:academy/features/subscription/presentation/view/payment_failed_view.dart';
 import 'package:academy/features/subscription/presentation/view/payment_success_view.dart';
 import 'package:academy/features/subscription/presentation/view/subscription_view.dart';
@@ -21,6 +22,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const PaymentSuccessView());
       case Routes.paymentFailedScreen:
         return MaterialPageRoute(builder: (_) => const PaymentFailedView());
+      case Routes.creditCardDetailsScreen:
+        return MaterialPageRoute(builder: (_) => const CreditCardDetailsView());
       default:
         return MaterialPageRoute(
           builder:
