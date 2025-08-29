@@ -1,9 +1,9 @@
 import 'package:academy/core/helpers/spacing.dart';
-import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:flutter/material.dart';
-import 'widgets/custom_text_field.dart';
+
 import 'widgets/auth_button.dart';
+import 'widgets/custom_text_field.dart';
 import 'widgets/social_buttons.dart';
 
 class SignUpForm extends StatelessWidget {
@@ -15,12 +15,15 @@ class SignUpForm extends StatelessWidget {
       padding: const EdgeInsets.all(24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+
         children: [
           verticalSpace(30),
           Text("Create Account", style: TextStylesManager.font22Bold),
           verticalSpace(8),
-          Text("Sign up to start your learning journey",
-              style: TextStylesManager.font16Medium),
+          Text(
+            "Sign up to start your learning journey",
+            style: TextStylesManager.font16Medium,
+          ),
           verticalSpace(30),
 
           const CustomTextField(hint: "Full Name", icon: Icons.person),
@@ -58,7 +61,12 @@ class SignUpForm extends StatelessWidget {
                   disabledForegroundColor: Colors.transparent,
                   disabledBackgroundColor: Colors.transparent,
                 ),
-                child: Text("Sign In", style: TextStylesManager.font14Regular.copyWith(color: ColorsManager.primaryColor)),
+                child: Text(
+                  "Sign In",
+                  style: TextStylesManager.font14Regular.copyWith(
+                    color: Colors.blue,
+                  ),
+                ),
               ),
             ],
           ),

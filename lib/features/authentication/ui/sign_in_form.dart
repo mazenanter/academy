@@ -1,8 +1,8 @@
 import 'package:academy/core/helpers/spacing.dart';
-import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/features/authentication/ui/widgets/auth_button.dart';
 import 'package:flutter/material.dart';
+
 import 'widgets/custom_text_field.dart';
 import 'widgets/social_buttons.dart';
 
@@ -96,7 +96,12 @@ class _SignInFormState extends State<SignInForm> {
                   disabledForegroundColor: Colors.transparent,
                   disabledBackgroundColor: Colors.transparent,
                 ),
-                child: Text("Sign Up", style: TextStylesManager.font14Regular.copyWith(color: ColorsManager.primaryColor)),
+                child: Text(
+                  "Sign Up",
+                  style: TextStylesManager.font14Regular.copyWith(
+                    color: Colors.blue,
+                  ),
+                ),
               ),
             ],
           ),

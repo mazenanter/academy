@@ -1,7 +1,8 @@
 import 'package:academy/core/routing/routes.dart';
-import 'package:academy/features/authentication/ui/auth_screen.dart';
 import 'package:academy/features/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../../features/authentication/ui/auth_screen.dart';
 
 class AppRouter {
   Route onGenerateRoute(RouteSettings settings) {

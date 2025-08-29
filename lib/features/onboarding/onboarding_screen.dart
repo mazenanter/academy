@@ -1,4 +1,6 @@
+import 'package:academy/core/helpers/extenstions.dart';
 import 'package:academy/core/helpers/spacing.dart';
+import 'package:academy/core/routing/routes.dart';
 import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/core/widgets/app_text_button.dart';
@@ -35,7 +37,9 @@ class OnboardingScreen extends StatelessWidget {
                 textStyle: TextStylesManager.font22Bold.copyWith(
                   color: Colors.white,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  context.pushNamedAndRemoveUntil(Routes.authentication);
+                },
               ),
               verticalSpace(8),
               AppTextButton(
@@ -46,7 +50,9 @@ class OnboardingScreen extends StatelessWidget {
                 textStyle: TextStylesManager.font22Bold.copyWith(
                   color: ColorsManager.primaryColor,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  context.pushNamedAndRemoveUntil(Routes.authentication);
+                },
               ),
             ],
           ),
