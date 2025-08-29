@@ -1,4 +1,4 @@
-import 'package:academy/core/styles/colors_manger.dart';
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -37,14 +37,14 @@ class AppTextButton extends StatelessWidget {
         shape: WidgetStatePropertyAll(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderRaduis ?? 5),
-            side: BorderSide(width: 1, color: ColorsManger.primaryColor),
+            side: BorderSide(width: 1, color: ColorsManager.primaryColor),
           ),
         ),
         fixedSize: WidgetStatePropertyAll(
           Size(buttonWidth?.w ?? double.maxFinite, buttonHeight?.h ?? 55.h),
         ),
         backgroundColor: WidgetStatePropertyAll(
-          backgroundColor ?? ColorsManger.primaryColor,
+          backgroundColor ?? ColorsManager.primaryColor,
         ),
       ),
       onPressed: onPressed,
