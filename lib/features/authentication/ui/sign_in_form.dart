@@ -1,8 +1,10 @@
+import 'package:academy/core/helpers/extenstions.dart';
 import 'package:academy/core/helpers/spacing.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/features/authentication/ui/widgets/auth_button.dart';
 import 'package:flutter/material.dart';
 
+import '../../../core/routing/routes.dart';
 import 'widgets/custom_text_field.dart';
 import 'widgets/social_buttons.dart';
 
@@ -59,7 +61,9 @@ class _SignInFormState extends State<SignInForm> {
                 ],
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.pushNamed(Routes.forgetPasswordScreen);
+                },
                 style: TextButton.styleFrom(
                   foregroundColor: Colors.transparent,
                   overlayColor: Colors.transparent,
@@ -85,7 +89,7 @@ class _SignInFormState extends State<SignInForm> {
             children: [
               Text(
                 "Don’t Have an Account?",
-                style: TextStylesManager.font14Regular,
+                style: TextStylesManager.font14LighterGreyRegular,
               ),
               TextButton(
                 onPressed: () {},
@@ -98,7 +102,7 @@ class _SignInFormState extends State<SignInForm> {
                 ),
                 child: Text(
                   "Sign Up",
-                  style: TextStylesManager.font14Regular.copyWith(
+                  style: TextStylesManager.font14LighterGreyRegular.copyWith(
                     color: Colors.blue,
                   ),
                 ),

@@ -50,7 +50,7 @@ class SignUpForm extends StatelessWidget {
             children: [
               Text(
                 "Already Have an Account?",
-                style: TextStylesManager.font14Regular,
+                style: TextStylesManager.font14LighterGreyRegular,
               ),
               TextButton(
                 onPressed: () {},
@@ -63,7 +63,7 @@ class SignUpForm extends StatelessWidget {
                 ),
                 child: Text(
                   "Sign In",
-                  style: TextStylesManager.font14Regular.copyWith(
+                  style: TextStylesManager.font14LighterGreyRegular.copyWith(
                     color: Colors.blue,
                   ),
                 ),

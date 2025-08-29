@@ -1,3 +1,4 @@
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -24,5 +25,15 @@ class TextStylesManager {
     fontSize: 14.sp,
     fontWeight: FontWeight.normal,
     color: Colors.grey,
+  );
+  static TextStyle font16Regular = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorsManager.greyColor,
+  );
+  static TextStyle font14LighterGreyRegular = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorsManager.lightGreyColor,
   );
 }

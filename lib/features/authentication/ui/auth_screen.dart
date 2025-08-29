@@ -80,7 +80,7 @@ class _AuthScreenState extends State<AuthScreen>
                 ),
                 SizedBox(
                   width: 400.w,
-                  height: MediaQuery.of(context).size.height * 0.78,
+                  height: MediaQuery.of(context).size.height * 0.72,
                   child: TabBarView(
                     controller: _tabController,
                     children: const [SignUpForm(), SignInForm()],
