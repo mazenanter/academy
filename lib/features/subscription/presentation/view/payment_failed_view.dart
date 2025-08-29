@@ -28,40 +28,44 @@ class _PaymentFailedViewState extends State<PaymentFailedView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: BackScreen(
-        child: SafeArea(
-          child: Padding(
-            padding: EdgeInsetsGeometry.symmetric(horizontal: 26.w),
-            child: Column(
-              children: [
-                Gap(30.h),
-                Text('Payment has failed!', style: TextStylesManager.font20Bold),
-                Spacer(),
-                Image.asset(Assets.paymentFailed1),
-                Gap(10.h),
-                Text(
-                  "Your payment couldn’t be processed.",
-                  style: TextStylesManager.font16Regular.copyWith(color: ColorsManger.grayColor),
-                  textAlign: TextAlign.center,
+    return BackScreen(
+      child: SafeArea(
+        child: Padding(
+          padding: EdgeInsetsGeometry.symmetric(horizontal: 26.w),
+          child: Column(
+            children: [
+              Gap(30.h),
+              Text('Payment has failed!', style: TextStylesManager.font20Bold),
+              Spacer(),
+              Image.asset(Assets.paymentFailed1),
+              Gap(10.h),
+              Text(
+                "Your payment couldn’t be processed.",
+                style: TextStylesManager.font16Regular.copyWith(
+                  color: ColorsManger.grayColor,
                 ),
-                Text(
-                  "Please try again or use a different payment method.",
-                  style: TextStylesManager.font16Regular.copyWith(color: ColorsManger.grayColor),
-                  textAlign: TextAlign.center,
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                "Please try again or use a different payment method.",
+                style: TextStylesManager.font16Regular.copyWith(
+                  color: ColorsManger.grayColor,
                 ),
-                Spacer(),
-                AppTextButton(
-                  text: "Try Again",
-                  textStyle: TextStylesManager.font22Bold.copyWith(color: Colors.white),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  borderRadius: 24,
+                textAlign: TextAlign.center,
+              ),
+              Spacer(),
+              AppTextButton(
+                text: "Try Again",
+                textStyle: TextStylesManager.font22Bold.copyWith(
+                  color: Colors.white,
                 ),
-                Gap(80.h),
-              ],
-            ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                borderRadius: 24,
+              ),
+              Gap(80.h),
+            ],
           ),
         ),
       ),

@@ -28,8 +28,7 @@ class _PaymentSuccessViewState extends State<PaymentSuccessView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: BackScreen(
+    return  BackScreen(
         child: SafeArea(
           child: Padding(
             padding: EdgeInsetsGeometry.symmetric(horizontal: 26.w),
@@ -71,7 +70,7 @@ class _PaymentSuccessViewState extends State<PaymentSuccessView> {
             ),
           ),
         ),
-      ),
+     
     );
   }
 }

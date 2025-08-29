@@ -6,19 +6,21 @@ class BackScreen extends StatelessWidget {
   final Widget child;
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Align(
-          alignment: Alignment.topCenter,
+    return Scaffold(
+      body: Stack(
+        children: [
+          Align(
+            alignment: Alignment.topCenter,
 
-          child: Image.asset(Assets.backDraw, fit: BoxFit.cover),
-        ),
-        Align(
-          alignment: Alignment.bottomCenter,
-          child: Image.asset(Assets.backDraw, fit: BoxFit.cover),
-        ),
-        ...[child],
-      ],
+            child: Image.asset(Assets.backDraw, fit: BoxFit.cover),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Image.asset(Assets.backDraw, fit: BoxFit.cover),
+          ),
+          ...[child],
+        ],
+      ),
     );
   }
 }

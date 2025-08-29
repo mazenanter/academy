@@ -8,13 +8,11 @@ class SubscriptionView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: BackScreen(
-        child: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 26.w),
-            child: SubscriptionViewBody(),
-          ),
+    return BackScreen(
+      child: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 26.w),
+          child: SubscriptionViewBody(),
         ),
       ),
     );
