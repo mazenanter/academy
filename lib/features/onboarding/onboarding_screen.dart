@@ -1,5 +1,5 @@
 import 'package:academy/core/helpers/spacing.dart';
-import 'package:academy/core/styles/colors_manger.dart';
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/core/widgets/app_text_button.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +44,7 @@ class OnboardingScreen extends StatelessWidget {
 
                 text: 'Login',
                 textStyle: TextStylesManager.font22Bold.copyWith(
-                  color: ColorsManger.primaryColor,
+                  color: ColorsManager.primaryColor,
                 ),
                 onPressed: () {},
               ),

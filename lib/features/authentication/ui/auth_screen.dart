@@ -1,3 +1,4 @@
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/widgets/back_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -34,23 +35,44 @@ class _AuthScreenState extends State<AuthScreen>
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.all(4.w),
+              margin: EdgeInsets.symmetric(horizontal: 40.h),
+              padding: EdgeInsets.zero,
               decoration: BoxDecoration(
-                color: Colors.grey.shade200,
-                borderRadius: BorderRadius.circular(30),
+                color: ColorsManager.white,
+                borderRadius: BorderRadius.circular(12),
               ),
               child: TabBar(
                 controller: _tabController,
+                labelPadding: EdgeInsets.zero,
+                padding: EdgeInsets.zero,
                 indicator: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(30),
+                  color: ColorsManager.grey200,
+                  borderRadius: BorderRadius.circular(12),
+                  // boxShadow: [
+                  //   BoxShadow(
+                  //     color: Colors.black.withOpacity(0.15),
+                  //     blurRadius: 8,
+                  //     offset: const Offset(0, 0),
+                  //   ),
+                  // ],
                 ),
-                labelColor: Colors.black,
-                unselectedLabelColor: Colors.grey,
-                indicatorColor: Colors.transparent, // ✅ remove underline
-                dividerColor: Colors.transparent, // ✅ Flutter 3.7+
+                labelColor: ColorsManager.black,
+                unselectedLabelColor: ColorsManager.grey,
+                indicatorColor: Colors.transparent,
+                dividerColor: Colors.transparent,
                 overlayColor: MaterialStateProperty.all(Colors.transparent),
-                tabs: const [Tab(text: "Sign Up"), Tab(text: "Sign In")],
+                tabs: [
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 34.w),
+                    alignment: Alignment.center,
+                    child: const Tab(text: "Sign Up"),
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 34.w),
+                    alignment: Alignment.center,
+                    child: const Tab(text: "Sign In"),
+                  ),
+                ],
               ),
             ),
             Expanded(

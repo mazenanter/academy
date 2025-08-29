@@ -1,4 +1,6 @@
 import 'package:academy/core/helpers/spacing.dart';
+import 'package:academy/core/styles/colors_manager.dart';
+import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:flutter/material.dart';
 import 'widgets/custom_text_field.dart';
 import 'widgets/auth_button.dart';
@@ -15,12 +17,10 @@ class SignUpForm extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           verticalSpace(30),
-          const Text(
-            "Create Account",
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-          ),
+          Text("Create Account", style: TextStylesManager.font22Bold),
           verticalSpace(8),
-          const Text("Sign up to start your learning journey"),
+          Text("Sign up to start your learning journey",
+              style: TextStylesManager.font16Medium),
           verticalSpace(30),
 
           const CustomTextField(hint: "Full Name", icon: Icons.person),
@@ -41,6 +41,27 @@ class SignUpForm extends StatelessWidget {
 
           verticalSpace(30),
           const SocialButtons(),
+          verticalSpace(30),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "Already Have an Account?",
+                style: TextStylesManager.font14Regular,
+              ),
+              TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.transparent,
+                  overlayColor: Colors.transparent,
+                  surfaceTintColor: Colors.transparent,
+                  disabledForegroundColor: Colors.transparent,
+                  disabledBackgroundColor: Colors.transparent,
+                ),
+                child: Text("Sign In", style: TextStylesManager.font14Regular.copyWith(color: ColorsManager.primaryColor)),
+              ),
+            ],
+          ),
         ],
       ),
     );
