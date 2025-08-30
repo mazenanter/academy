@@ -1,17 +1,27 @@
 import 'package:academy/core/routing/routes.dart';
 import 'package:academy/features/onboarding/onboarding_screen.dart';
+
 import 'package:academy/features/subscription/presentation/view/choose_payment_method_view.dart';
 import 'package:academy/features/subscription/presentation/view/credit_card_details_view.dart';
 import 'package:academy/features/subscription/presentation/view/payment_failed_view.dart';
 import 'package:academy/features/subscription/presentation/view/payment_success_view.dart';
 import 'package:academy/features/subscription/presentation/view/subscription_view.dart';
+
+import 'package:academy/features/reset_password/forget_password_screen.dart';
+import 'package:academy/features/reset_password/otp_screen.dart';
+import 'package:academy/features/reset_password/reset_password_screen.dart';
+// import 'package:academy/screen.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../features/authentication/ui/auth_screen.dart';
 
 class AppRouter {
   Route onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.onboardingScreen:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
+
       case Routes.subscriptionScreen:
         return MaterialPageRoute(builder: (_) => const SubscriptionView());
       case Routes.choosePaymentMethodScreen:
@@ -24,6 +34,16 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const PaymentFailedView());
       case Routes.creditCardDetailsScreen:
         return MaterialPageRoute(builder: (_) => const CreditCardDetailsView());
+
+      case Routes.authentication:
+        return MaterialPageRoute(builder: (_) => const AuthScreen());
+      case Routes.forgetPasswordScreen:
+        return MaterialPageRoute(builder: (_) => const ForgetPasswordScreen());
+      case Routes.resetPasswordScreen:
+        return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
+      case Routes.otpScreen:
+        return MaterialPageRoute(builder: (_) => const OtpScreen());
+
       default:
         return MaterialPageRoute(
           builder:

@@ -1,3 +1,4 @@
+import 'package:academy/core/routing/routes.dart';
 import 'package:academy/core/styles/colors_manger.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/core/widgets/app_text_button.dart';
@@ -50,13 +51,17 @@ class _CreditCardDetailsViewBodyState extends State<CreditCardDetailsViewBody> {
               textStyle: TextStylesManager.font22Medium.copyWith(
                 color: Colors.white,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, Routes.paymentSuccessScreen);
+              },
               borderRadius: 24,
             ),
             Gap(10.h),
             Center(
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(

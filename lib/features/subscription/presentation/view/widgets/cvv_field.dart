@@ -1,6 +1,7 @@
-import 'package:academy/core/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'custom_subscription_text_form_field.dart';
 
 class CVVField extends StatelessWidget {
   final TextEditingController controller = TextEditingController();
@@ -9,7 +10,7 @@ class CVVField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomTextFormField(
+    return CustomSubscriptionTextFormField(
       controller: controller,
       keyboardType: TextInputType.number,
       inputFormatters: [

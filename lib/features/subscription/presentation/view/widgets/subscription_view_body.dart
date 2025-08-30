@@ -77,7 +77,7 @@ class _SubscriptionViewBodyState extends State<SubscriptionViewBody> {
           Gap(10.h),
           GestureDetector(
             onTap: () {
-              // navigate to home view
+              Navigator.pushNamed(context, Routes.choosePaymentMethodScreen);
             },
             child: Center(
               child: Padding(

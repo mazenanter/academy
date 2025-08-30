@@ -9,11 +9,9 @@ class ChoosePaymentMethodView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BackScreen(
-      child: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 26.w),
-          child: ChoosePaymentMethodViewBody(),
-        ),
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 26.w),
+        child: ChoosePaymentMethodViewBody(),
       ),
     );
   }

@@ -9,11 +9,9 @@ class CreditCardDetailsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BackScreen(
-      child: SafeArea(
-        child: Padding(
-          padding: EdgeInsetsGeometry.symmetric(horizontal: 26.w),
-          child: CreditCardDetailsViewBody(),
-        ),
+      child: Padding(
+        padding: EdgeInsetsGeometry.symmetric(horizontal: 26.w),
+        child: CreditCardDetailsViewBody(),
       ),
     );
   }

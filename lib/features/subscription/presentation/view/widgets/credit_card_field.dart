@@ -1,4 +1,4 @@
-import 'package:academy/core/widgets/custom_text_form_field.dart';
+import 'package:academy/features/subscription/presentation/view/widgets/custom_subscription_text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -33,7 +33,7 @@ class CreditCardField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomTextFormField(
+    return CustomSubscriptionTextFormField(
       controller: controller,
       keyboardType: TextInputType.number,
       inputFormatters: [

@@ -1,3 +1,4 @@
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 
@@ -7,19 +8,22 @@ class BackScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Align(
-            alignment: Alignment.topCenter,
+      backgroundColor: ColorsManager.bgColor,
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Align(
+              alignment: Alignment.topCenter,
 
-            child: Image.asset(Assets.backDraw, fit: BoxFit.cover),
-          ),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Image.asset(Assets.backDraw, fit: BoxFit.cover),
-          ),
-          ...[child],
-        ],
+              child: Image.asset(Assets.backDraw, fit: BoxFit.cover),
+            ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Image.asset(Assets.backDraw, fit: BoxFit.cover),
+            ),
+            ...[child],
+          ],
+        ),
       ),
     );
   }
