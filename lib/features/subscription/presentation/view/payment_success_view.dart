@@ -1,4 +1,4 @@
-import 'package:academy/core/styles/colors_manger.dart';
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/core/utils/app_images.dart';
 import 'package:academy/core/widgets/app_text_button.dart';
@@ -44,14 +44,14 @@ class _PaymentSuccessViewState extends State<PaymentSuccessView> {
               Text(
                 "Your subscription has been placed. ",
                 style: TextStylesManager.font16Regular.copyWith(
-                  color: ColorsManger.grayColor,
+                  color: ColorsManager.greyColor,
                 ),
                 textAlign: TextAlign.center,
               ),
               Text(
                 "We will send you an email with your subscription details",
                 style: TextStylesManager.font16Regular.copyWith(
-                  color: ColorsManger.grayColor,
+                  color: ColorsManager.greyColor,
                 ),
                 textAlign: TextAlign.center,
               ),

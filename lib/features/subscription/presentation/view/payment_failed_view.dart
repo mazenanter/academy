@@ -1,4 +1,4 @@
-import 'package:academy/core/styles/colors_manger.dart';
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/core/utils/app_images.dart';
 import 'package:academy/core/widgets/app_text_button.dart';
@@ -41,14 +41,14 @@ class _PaymentFailedViewState extends State<PaymentFailedView> {
             Text(
               "Your payment couldn’t be processed.",
               style: TextStylesManager.font16Regular.copyWith(
-                color: ColorsManger.grayColor,
+                color: ColorsManager.greyColor,
               ),
               textAlign: TextAlign.center,
             ),
             Text(
               "Please try again or use a different payment method.",
               style: TextStylesManager.font16Regular.copyWith(
-                color: ColorsManger.grayColor,
+                color: ColorsManager.greyColor,
               ),
               textAlign: TextAlign.center,
             ),

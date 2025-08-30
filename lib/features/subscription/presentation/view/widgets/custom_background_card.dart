@@ -1,4 +1,4 @@
-import 'package:academy/core/styles/colors_manger.dart';
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,7 +17,7 @@ class CustomBackgroundCard extends StatelessWidget {
         decoration: ShapeDecoration(
           color: Colors.white,
           shape: RoundedRectangleBorder(
-            side: BorderSide(width: 1, color: isSelected ? ColorsManger.primaryColor : const Color(0xFFE8E3FB)),
+            side: BorderSide(width: 1, color: isSelected ? ColorsManager.primaryColor : const Color(0xFFE8E3FB)),
             borderRadius: BorderRadius.circular(10),
           ),
         ),

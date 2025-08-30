@@ -1,4 +1,4 @@
-import 'package:academy/core/styles/colors_manger.dart';
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/features/subscription/presentation/view/widgets/custom_radio.dart';
 import 'package:academy/features/subscription/presentation/view/widgets/custom_background_card.dart';
@@ -40,14 +40,14 @@ class CustomSubscriptionCard extends StatelessWidget {
             Text(
               subtitle,
               style: TextStylesManager.font14Medium.copyWith(
-                color: ColorsManger.grayColor,
+                color: ColorsManager.greyColor,
               ),
             ),
             Gap(10.h),
             Text(
               desc,
               style: TextStylesManager.font14Regular.copyWith(
-                color: ColorsManger.grayColor,
+                color: ColorsManager.greyColor,
               ),
             ),
             Gap(10.h),
@@ -56,7 +56,7 @@ class CustomSubscriptionCard extends StatelessWidget {
                 Text(
                   priceAfterDiscount,
                   style: TextStylesManager.font14Bold.copyWith(
-                    color: ColorsManger.primaryColor,
+                    color: ColorsManager.primaryColor,
                   ),
                 ),
                 Spacer(),

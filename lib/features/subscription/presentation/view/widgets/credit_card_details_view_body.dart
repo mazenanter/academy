@@ -1,5 +1,5 @@
 import 'package:academy/core/routing/routes.dart';
-import 'package:academy/core/styles/colors_manger.dart';
+import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/core/widgets/app_text_button.dart';
 import 'package:academy/features/subscription/presentation/view/widgets/credit_card_field.dart';
@@ -32,7 +32,7 @@ class _CreditCardDetailsViewBodyState extends State<CreditCardDetailsViewBody> {
             Text(
               "Lorem ipsum dolor sit amet consectetur. Eu eget tristique quis risus quam. Aliquam quis amet euismod vitae sollicitudin.",
               style: TextStylesManager.font16Regular.copyWith(
-                color: ColorsManger.grayColor,
+                color: ColorsManager.greyColor,
               ),
             ),
             Gap(30.h),
