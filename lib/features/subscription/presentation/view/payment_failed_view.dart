@@ -30,7 +30,7 @@ class _PaymentFailedViewState extends State<PaymentFailedView> {
   Widget build(BuildContext context) {
     return BackScreen(
       child: Padding(
-        padding: EdgeInsetsGeometry.symmetric(horizontal: 26.w),
+        padding: EdgeInsets.symmetric(horizontal: 26.w),
         child: Column(
           children: [
             Gap(30.h),

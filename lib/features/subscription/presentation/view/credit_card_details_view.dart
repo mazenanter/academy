@@ -10,7 +10,7 @@ class CreditCardDetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BackScreen(
       child: Padding(
-        padding: EdgeInsetsGeometry.symmetric(horizontal: 26.w),
+        padding: EdgeInsets.symmetric(horizontal: 26.w),
         child: CreditCardDetailsViewBody(),
       ),
     );
