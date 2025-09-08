@@ -4,9 +4,9 @@ import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:academy/features/authentication/ui/widgets/auth_button.dart';
 import 'package:flutter/material.dart';
 
-import '../../../core/routing/routes.dart';
-import 'widgets/custom_text_field.dart';
-import 'widgets/social_buttons.dart';
+import '../../../../core/routing/routes.dart';
+import 'custom_text_field.dart';
+import 'social_buttons.dart';
 
 class SignInForm extends StatefulWidget {
   const SignInForm({super.key});
@@ -53,7 +53,6 @@ class _SignInFormState extends State<SignInForm> {
                     value: isSelected,
                     onChanged: (_) {
                       isSelected = !isSelected;
-                      print(isSelected);
                       setState(() {});
                     },
                   ),

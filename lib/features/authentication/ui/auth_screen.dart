@@ -3,8 +3,8 @@ import 'package:academy/core/widgets/back_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'sign_in_form.dart';
-import 'sign_up_form.dart';
+import 'widgets/sign_in_form.dart';
+import 'widgets/sign_up_form.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});

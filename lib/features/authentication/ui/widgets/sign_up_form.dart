@@ -2,9 +2,9 @@ import 'package:academy/core/helpers/spacing.dart';
 import 'package:academy/core/styles/text_styles_manager.dart';
 import 'package:flutter/material.dart';
 
-import 'widgets/auth_button.dart';
-import 'widgets/custom_text_field.dart';
-import 'widgets/social_buttons.dart';
+import 'auth_button.dart';
+import 'custom_text_field.dart';
+import 'social_buttons.dart';
 
 class SignUpForm extends StatelessWidget {
   const SignUpForm({super.key});

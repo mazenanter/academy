@@ -1,0 +1,3 @@
+class RegisterRequestBody {
+  RegisterRequestBody();
+}
