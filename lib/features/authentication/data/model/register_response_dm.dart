@@ -1,12 +1,10 @@
-class RegisterResponseEntity {
-  final int? statusCode;
-  final String? message;
-  final Map<String, List<String>>? errors;
+import 'package:academy/features/authentication/domain/entity/register_response_entity.dart';
 
-  RegisterResponseEntity({this.statusCode, this.message, this.errors});
+class RegisterResponseDm extends RegisterResponseEntity {
+  RegisterResponseDm({super.statusCode, super.message, super.errors});
 
-  factory RegisterResponseEntity.fromJson(Map<String, dynamic> json) {
-    return RegisterResponseEntity(
+  factory RegisterResponseDm.fromJson(Map<String, dynamic> json) {
+    return RegisterResponseDm(
       statusCode: json['statusCode'] ?? 0,
       message: json['message'] ?? '',
       errors:
@@ -17,6 +15,7 @@ class RegisterResponseEntity {
     );
   }
 
+  @override
   Map<String, dynamic> toJson() {
     return {'statusCode': statusCode, 'message': message, 'errors': errors};
   }
