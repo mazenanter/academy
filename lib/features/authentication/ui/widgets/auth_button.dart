@@ -4,7 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AuthButton extends StatelessWidget {
   final String text;
-  const AuthButton({super.key, required this.text});
+  final void Function()? onPressed;
+  const AuthButton({super.key, required this.text, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class AuthButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
         ),
-        onPressed: () {},
+        onPressed: () => onPressed?.call(),
         child: Text(
           text,
           style: const TextStyle(fontSize: 16, color: Colors.white),

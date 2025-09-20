@@ -1,10 +1,13 @@
+import 'package:academy/core/di/di.dart';
 import 'package:academy/core/styles/colors_manager.dart';
 import 'package:academy/core/widgets/back_screen.dart';
+import 'package:academy/features/authentication/ui/cubit/authentication_view_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'widgets/sign_in_form.dart';
 import 'widgets/sign_up_form.dart';
+
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
@@ -16,6 +19,7 @@ class AuthScreen extends StatefulWidget {
 class _AuthScreenState extends State<AuthScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
+  AuthViewModel authViewModel = getIt<AuthViewModel>();
 
   @override
   void initState() {
@@ -78,12 +82,15 @@ class _AuthScreenState extends State<AuthScreen>
                     ],
                   ),
                 ),
-                SizedBox(
-                  width: 400.w,
-                  height: MediaQuery.of(context).size.height * 0.72,
-                  child: TabBarView(
-                    controller: _tabController,
-                    children: const [SignUpForm(), SignInForm()],
+                BlocProvider(
+                  create: (context) => authViewModel,
+                  child: SizedBox(
+                    width: 400.w,
+                    height: MediaQuery.of(context).size.height * 0.72,
+                    child: TabBarView(
+                      controller: _tabController,
+                      children: [SignUpForm(authViewModel: authViewModel,), SignInForm()],
+                    ),
                   ),
                 ),
               ],
