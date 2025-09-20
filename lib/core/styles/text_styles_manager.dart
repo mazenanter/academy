@@ -9,6 +9,12 @@ class TextStylesManager {
     color: Colors.black,
   );
 
+  static TextStyle light16White = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w300,
+    color: Colors.white,
+  );
+
   static TextStyle font22Bold = TextStyle(
     fontSize: 22.sp,
     fontWeight: FontWeight.bold,
